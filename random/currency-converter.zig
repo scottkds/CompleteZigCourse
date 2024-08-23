@@ -12,7 +12,7 @@ pub fn main() !void {
     const usd2jpy: f32 = 100 * xrate_jpy;
 
     try stdout.print(
-        "Euros: {d}, Pounds: {d}, Yen: {d}\n",
+        "Euros: {d:.2}, Pounds: {d:.2}, Yen: {d:.2}\n",
         .{ usd2euro, usd2gbp, usd2jpy },
     );
 }
